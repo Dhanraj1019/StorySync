@@ -178,7 +178,7 @@ export default function Header() {
                                         logout();
                                         setIsOpen(false);
                                     }} 
-                                    bgColor="bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 text-red-600 dark:text-red-400 w-full"
+                                    bgColor="bg-salt-300 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 text-red-600 dark:text-red-400 w-full"
                                     className="cursor-pointer py-2.5 text-sm font-semibold"
                                 >
                                     Logout

@@ -2,7 +2,7 @@ export default function Button({
     children,
     type="button",
     bgColor='bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 shadow-lg shadow-indigo-900/25 hover:shadow-indigo-500/25',
-    textColor='text-white',
+    textColor='text-black',
     className="",
     ...props
 }){
