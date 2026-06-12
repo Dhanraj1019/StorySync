@@ -23,7 +23,7 @@ function Footer() {
             </div>
             <div>
               <p className="text-xs text-slate-400 dark:text-slate-500 font-medium">
-                &copy; Copyright 2026. All Rights Reserved by MegaBlog.
+                &copy; Copyright 2026. All Rights Reserved by StorySync.
               </p>
             </div>
           </div>
