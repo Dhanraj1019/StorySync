@@ -15,6 +15,7 @@ export default function Signup() {
     const signup = async (data) => {
         seterror('');
         try {
+            console.log("data = ",data);
             const session = await authService.createAccount(data);
             if (session) {
                 const result = await authService.authStatus();
@@ -71,6 +72,16 @@ export default function Signup() {
                         })}
                     />
                     
+                    
+                    <Input
+                        label="Name"
+                        placeholder="Enter your Full Name"
+                        type="text"
+                        {...register("name", {
+                            required: true
+                        })}
+                    />
+
                     <Input
                         label="Password"
                         placeholder="Choose a password"

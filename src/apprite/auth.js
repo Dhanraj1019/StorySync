@@ -8,16 +8,18 @@ class AuthService{
         this.account=new Account(this.client);
     }
 
-    async createAccount({id,email,password}){
+    async createAccount({id,email,name,password}){
         try{
             const user=await this.account.create({
             userId:ID.unique(),
             email,
+            name,
             password
             })
-            Login({email,password});
+            login({email,password});
             // return user;
         }catch(e){
+            console.log("error during signup = ",e);
             return false;
         }
     }
