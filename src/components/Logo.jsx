@@ -3,7 +3,7 @@ export default function Logo({width="100px",className=''}){
         <div className="flex items-center gap-2 font-bold text-xl tracking-tight select-none">
             {/* Logo Icon */}
             <div className={`w-8 h-8  flex items-center justify-center`}>
-                <img className={className} src="../public/logo.png"></img>
+                <img className={className} src="/logo.png"></img>
             </div>
             {/* Logo Text */}
             <span className="bg-linear-to-r from-slate-900 via-slate-800 to-slate-700 dark:from-white dark:via-slate-100 dark:to-slate-300 bg-clip-text text-transparent transition-all duration-200">
