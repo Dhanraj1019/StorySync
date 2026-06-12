@@ -60,7 +60,9 @@ const router=createBrowserRouter([
       {
         path:"/blog/:slug",
         element:(
-          <Blog/>
+          <Protected authentication={true} >
+            <Blog/>
+          </Protected>
         )
       },
       {

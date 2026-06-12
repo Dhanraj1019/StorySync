@@ -13,7 +13,7 @@ export default function RTE({name,control,label,defaultValue}) {
             rules={{required:true}}
             render={({field:{onChange}})=>(
                 <BundledEditor
-                    initialValue={defaultValue || '<p>This is the initial content of the editor.</p>'}
+                    initialValue={defaultValue || ''}
                     init={{
                     height: 500,
                     menubar: true,
