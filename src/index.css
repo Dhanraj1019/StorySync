@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  background-color: #f8fafc; /* bg-slate-50 */
+  color: #0f172a; /* text-slate-900 */
+}
+
+html.dark {
+  background-color: #030712; /* bg-gray-950 */
+  color: #f3f4f6; /* text-gray-100 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  color: inherit;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+  border: 2px solid #f8fafc;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border: 2px solid #030712;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Styles for Appwrite blog content parsing (Rich Text Editor output) */
+.browser-css {
+  color: #374151; /* text-gray-700 */
+  line-height: 1.75;
+  font-size: 1.1rem;
+}
+.dark .browser-css {
+  color: #d1d5db; /* text-gray-300 */
+}
+.browser-css h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827; /* text-gray-900 */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+.dark .browser-css h1 {
+  color: #ffffff;
+  border-bottom: 1px solid #1f2937;
+}
+.browser-css h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.dark .browser-css h2 {
+  color: #f3f4f6;
+}
+.browser-css h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.dark .browser-css h3 {
+  color: #f3f4f6;
+}
+.browser-css p {
+  margin-bottom: 1.25rem;
+}
+.browser-css ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.browser-css ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.browser-css li {
+  margin-bottom: 0.5rem;
+}
+.browser-css a {
+  color: #6d28d9; /* text-violet-700 */
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.dark .browser-css a {
+  color: #a78bfa; /* text-violet-400 */
+}
+.browser-css a:hover {
+  color: #4c1d95;
+}
+.dark .browser-css a:hover {
+  color: #c084fc;
+}
+.browser-css blockquote {
+  border-left: 4px solid #8b5cf6;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #4b5563;
+  margin: 1.5rem 0;
+}
+.dark .browser-css blockquote {
+  color: #9ca3af;
+}
+.browser-css img {
+  border-radius: 0.75rem;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.dark .browser-css img {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+.browser-css pre, .browser-css code {
+  background-color: #f1f5f9; /* bg-slate-100 */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.95em;
+  border-radius: 0.375rem;
+}
+.dark .browser-css pre, .dark .browser-css code {
+  background-color: #111827; /* bg-gray-900 */
+}
+.browser-css code {
+  padding: 0.2rem 0.4rem;
+  color: #db2777; /* text-pink-600 */
+}
+.dark .browser-css code {
+  color: #ec4899; /* text-pink-500 */
+}
+.browser-css pre {
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e2e8f0;
+}
+.dark .browser-css pre {
+  border: 1px solid #1f2937;
+}
+.browser-css pre code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+}
